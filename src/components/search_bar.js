@@ -9,7 +9,7 @@ class SearchBar extends Component {
 //that is a class based component
 //initialize with constructor method
 //and setting it with this.state (below)
-    this.state= { term: ' '};
+    this.state= { term: 'starting value'};
 
   }
 //define a new class called SB, and give it
@@ -26,8 +26,10 @@ class SearchBar extends Component {
 //this method informs react that the state changed
 return (
 <div>
-     <input onChange={ (event) => this.setState({ term: event.target.value }) }/>
-    Value of the input: { this.state.term }
+     <input
+     value={this.state.term}
+     onChange={ (event) => this.setState({ term: event.target.value }) }/>
+
  </div>
   )}
 //good practice for naming:
