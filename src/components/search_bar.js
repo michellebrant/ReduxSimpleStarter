@@ -10,7 +10,7 @@ class SearchBar extends Component {
 //that is a class based component
 //initialize with constructor method
 //and setting it with this.state (below)
-    this.state= { term: 'starting value'};
+    this.state= { term: 'Search here yo'};
 
   }
 //define a new class called SB, and give it
