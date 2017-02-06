@@ -6,6 +6,8 @@ const VideoDetail = ({video}) => {
     //this solves the problem outlined at the top of index
     //re: order of everything running. it prevents
     //from the below running is the state has no vidoe
+    //dont do these spinners all the time only specific instances
+
   }
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`
